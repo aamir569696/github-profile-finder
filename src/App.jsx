@@ -7,10 +7,6 @@ import ProfileCard from './components/Profile/ProfileCard'
 import { GithubProvider } from "./context/GithubContext";
 
 const App = () => {
-
-
-
-
   return (
    
    <GithubProvider>
