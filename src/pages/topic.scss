@@ -1,0 +1,119 @@
+.topics {
+    padding: 2rem 10rem;
+    color: white;
+
+    @media (max-width: 1024px) {
+        padding: 2rem 4rem;
+    }
+
+    @media (max-width: 768px) {
+        padding: 2rem 2rem;
+    }
+
+    @media (max-width: 480px) {
+        padding: 1.5rem 1rem;
+    }
+
+    .topics-header {
+        margin-bottom: 1.5rem;
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+
+            @media (max-width: 480px) {
+                font-size: 1.4rem;
+            }
+        }
+
+        p {
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+    }
+
+    .topics-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 480px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.8rem;
+        }
+    }
+
+    .topic-card {
+        background-color: #161B22;
+        border: 1px solid #30363d;
+        border-radius: 12px;
+        padding: 1.5rem;
+        cursor: pointer;
+        transition: all 0.25s ease;
+
+        &:hover {
+            border-color: #58a6ff;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 480px) {
+            padding: 1rem;
+
+            &:hover {
+                transform: translateY(-2px);
+            }
+        }
+
+        .topic-icon {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 0.8rem;
+
+            @media (max-width: 480px) {
+                font-size: 1.6rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+
+            @media (max-width: 480px) {
+                font-size: 0.9rem;
+            }
+        }
+
+        p {
+            font-size: 0.8rem;
+            color: #8b949e;
+            margin-bottom: 0.8rem;
+
+            @media (max-width: 480px) {
+                font-size: 0.75rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        .topic-tag {
+            font-size: 0.75rem;
+            padding: 3px 10px;
+            border-radius: 10px;
+            background-color: rgba(88, 166, 255, 0.1);
+            color: #58a6ff;
+            border: 1px solid rgba(88, 166, 255, 0.3);
+
+            @media (max-width: 480px) {
+                font-size: 0.7rem;
+                padding: 2px 8px;
+            }
+        }
+    }
+}
