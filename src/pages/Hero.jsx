@@ -9,6 +9,8 @@ const Hero = () => {
   const [username, setUserName] = useState("");
   const navigate = useNavigate();
 
+  
+
   const fatchGithubUser = async () => {
     try {
       setLoading(true);
