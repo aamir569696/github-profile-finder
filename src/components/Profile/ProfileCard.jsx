@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import GithubContext from "../../context/GithubContext";
 import NotFound from "../../notfound/NotFound";
 
+
 const ProfileCard = () => {
   const { userdata } = useContext(GithubContext);
   const navigate = useNavigate();
@@ -16,6 +17,7 @@ if (!userdata || Object.keys(userdata).length === 0) {
 
   return (
     <>
+
       <Navbar></Navbar>
       <button className="back-search" onClick={() => navigate("/")}>
         ↩ Back To search
